@@ -52,7 +52,7 @@ class User extends Sequelize.Model { // User 모델 정의
             as: 'Followings', //
             through: 'Follow', //
         });
-        db.User,hasMany(db.Domain)
+        db.User.hasMany(db.Domain)
     }
 };
 
