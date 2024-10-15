@@ -77,7 +77,7 @@ exports.getMyPosts = (req, res) => {
 //
 exports.getPostsByHashtag = async (req, res) => {
     try {
-        const hashtag = await Hashtag.findOne({ where: { title: req.parmas.title } }); //
+        const hashtag = await Hashtag.findOne({ where: { title: req.params.title } }); //
         if (!hashtag) { //
             return res.status(404).json({ //
                 code: 404,
